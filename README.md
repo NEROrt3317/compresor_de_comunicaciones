@@ -20,12 +20,16 @@ Proporciona instrucciones claras sobre cómo instalar y configurar el proyecto. 
    ```
 2. Navega al directorio del proyecto:
    ```
-   cd compresor_de_comunicaciones/src/console/
+   cd compresor_de_comunicaciones/
    ```
 3. Ejecutar el programa :
    ```
-   python -m interfaz.py
+   python3 src/console/console.py
+
    ```
+4. Ejecutar el programa :
+   ```
+   sudo python3 src/console/interfaz.py
 
 ## Ejecución
 Explica cómo utilizar tu proyecto. Por ejemplo:
