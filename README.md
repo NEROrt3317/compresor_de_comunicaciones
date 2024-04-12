@@ -20,7 +20,7 @@ Proporciona instrucciones claras sobre cómo instalar y configurar el proyecto. 
    ```
 2. Navega al directorio del proyecto:
    ```
-   cd comprensor de comunicaciones/src/console/
+   cd comprensor_de_comunicaciones/src/console/
    ```
 3. Ejecutar el programa :
    ```
