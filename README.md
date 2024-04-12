@@ -22,22 +22,19 @@ Proporciona instrucciones claras sobre cómo instalar y configurar el proyecto. 
    ```
    cd compresor_de_comunicaciones/
    ```
-3. Ejecutar el programa :
+3. Ejecutar el programa en consola :
    ```
    python3 src/console/console.py
 
    ```
-4. Ejecutar el programa :
+4. Ejecutar el programa en interfaz :
    ```
    sudo python3 src/console/interfaz.py
 
 ## Ejecución
 Explica cómo utilizar tu proyecto. Por ejemplo:
-1. Ejecuta el programa principal:
-   ```
-   python console.py
-   ```
-2. Se abrirá una interfaz de usuario donde puedes seleccionar los archivos que deseas comprimir o descomprimir.
+
+Se abrirá una interfaz de usuario donde puedes seleccionar los archivos que deseas comprimir o descomprimir.
 
 
 ## Ejemplos
