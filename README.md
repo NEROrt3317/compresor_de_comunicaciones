@@ -16,7 +16,7 @@ Enumera las características principales de tu proyecto. Por ejemplo:
 Proporciona instrucciones claras sobre cómo instalar y configurar el proyecto. Por ejemplo:
 1. Clona el repositorio a tu máquina local:
    ```
-   git clone https://github.com/jorgebls/compresor-de-comunicaciones
+   git clone https://github.com/jorgebls/compresor_de_comunicaciones
    ```
 2. Navega al directorio del proyecto:
    ```
@@ -24,7 +24,7 @@ Proporciona instrucciones claras sobre cómo instalar y configurar el proyecto. 
    ```
 3. Ejecutar el programa :
    ```
-   python -m console.py
+   python -m interfaz.py
    ```
 
 ## Ejecución
