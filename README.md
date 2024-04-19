@@ -44,7 +44,7 @@ Una vez que hayas instalado todas las dependencias necesarias, puedes proceder a
 python -m pip install kivy
 ```
 
-
+#instrucciones para ejecutar el programa 
 
 Proporciona instrucciones claras sobre cómo instalar y configurar el proyecto. Por ejemplo:
 1. Clona el repositorio a tu máquina local:
