@@ -64,6 +64,8 @@ Proporciona instrucciones claras sobre cómo instalar y configurar el proyecto. 
    ```
    sudo python3 src/console/interfaz.py
 
+5. Ejecutar los casos de prueba 
+
 ## Ejecución
 Explica cómo utilizar tu proyecto. Por ejemplo:
 
