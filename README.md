@@ -44,7 +44,7 @@ Una vez que hayas instalado todas las dependencias necesarias, puedes proceder a
 python -m pip install kivy
 ```
 
-#instrucciones para ejecutar el programa 
+# instrucciones para ejecutar el programa 
 
 Proporciona instrucciones claras sobre cómo instalar y configurar el proyecto. Por ejemplo:
 1. Clona el repositorio a tu máquina local:
@@ -74,38 +74,25 @@ Se abrirá una interfaz de usuario donde puedes seleccionar los archivos que des
 Se proporciona un pedazo de código de que como funciona para comprimir o descomprimir un archivo. Por ejemplo:
 
 ```python
-# Ejemplo de cómo comprimir o descomprimir un archivo
+# Ejemplo de cómo comprimir o descomprimir un texto por consola
 
- def ejecutar(self):
-        print("Bienvenido a la aplicación de compresión/descompresión de texto.")
-        texto_usuario = input("Por favor, ingrese el texto: ")
-        accion = input("¿Desea comprimir o descomprimir el texto? (comprimir/descomprimir): ")
+#comprimir
 
-        if accion.lower() == "comprimir":
-            resultado = self.compresor.comprimir(texto_usuario)
-            print(f"Texto comprimido (en bytes): {resultado.hex()}")
-        elif accion.lower() == "descomprimir":
-            resultado = self.compresor.descomprimir(texto_usuario)
-            if resultado:
-                print(f"Texto descomprimido: {resultado}")
-            else:
-                print("No se pudo descomprimir el texto, asegúrese de que esté en el formato correcto.")
-        else:
-            print("Acción no reconocida. Por favor, ingrese 'comprimir' o 'descomprimir'.")
+(base) jorge@jorge-IdeaPad:~/Música/compresor_de_comunicaciones$ /bin/python3 /home/jorge/Música/compresor_de_comunicaciones/src/console/console.py
+Bienvenido a la aplicación de compresión/descompresión de texto.
+Por favor, ingrese el texto: hola mundo 
+¿Desea comprimir o descomprimir el texto? (comprimir/descomprimir): comprimir
+Texto comprimido (en bytes): 789ccbc8cf4954c82dcd4bc957000019460408
+
+#descomprimir
+
+(base) jorge@jorge-IdeaPad:~/Música/compresor_de_comunicaciones$ /bin/python3 /home/jorge/Música/compresor_de_comunicaciones/src/console/console.py
+Bienvenido a la aplicación de compresión/descompresión de texto.
+Por favor, ingrese el texto: 789ccbc8cf4954c82dcd4bc957000019460408
+¿Desea comprimir o descomprimir el texto? (comprimir/descomprimir): descomprimir
+Texto descomprimido: hola mundo 
 
 ```
-Comprimir
-Bienvenido a la aplicación de compresión/descompresión de texto.
-Por favor, ingrese el texto: hola
-¿Desea comprimir o descomprimir el texto? (comprimir/descomprimir): comprimir
-Texto comprimido (en bytes): 789ccbc8cf490400042a01a5
-Descomprimir
-
-Bienvenido a la aplicación de compresión/descompresión de texto.
-Por favor, ingrese el texto: 789ccbc8cf490400042a01a5
-
-¿Desea comprimir o descomprimir el texto? (comprimir/descomprimir): descomprimir
-Texto descomprimido: hola
 
 ## Licencia MIT
 
