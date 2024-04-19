@@ -69,14 +69,14 @@ class MiAplicacion(App):
             result=self.compresor.comprimir(self.entrada.text)
             self.resultado.text = "Texto comprimido (en bytes): \n" + result.hex()
         except Exception as e:
-            self.resultado.text = f"Error al descomprimir: {e}"
+            self.resultado.text = f" contenido invalido para comprimir "
 
     def descomprimir(self, instance):
         try:
             result=self.compresor.descomprimir(self.entrada.text)
             self.resultado.text = "Texto comprimido (en bytes): \n" + result
         except Exception as e:
-            self.resultado.text = f"Error al descomprimir: {e}"
+            self.resultado.text = f"contenido invalido para descomprimir"
 
 if __name__ == '__main__':
     MiAplicacion().run()
