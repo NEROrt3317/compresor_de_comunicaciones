@@ -65,18 +65,27 @@ class MiAplicacion(App):
         return layout
 
     def comprimir(self, instance):
-        try:
-            result=self.compresor.comprimir(self.entrada.text)
-            self.resultado.text = "Texto comprimido (en bytes): \n" + result.hex()
-        except Exception as e:
-            self.resultado.text = f" contenido invalido para comprimir "
+        if self.entrada.text == "":
+            self.resultado.text="Por favor, ingrese algún texto para comprimir."
+        else:
+            try:
+                result=self.compresor.comprimir(self.entrada.text)
+                self.resultado.text = "Texto comprimido (en bytes): \n" + result.hex()
+            except Exception as e:
+                self.resultado.text = f"texto inavalido para comprimir....."
 
     def descomprimir(self, instance):
-        try:
-            result=self.compresor.descomprimir(self.entrada.text)
-            self.resultado.text = "Texto comprimido (en bytes): \n" + result
-        except Exception as e:
-            self.resultado.text = f"contenido invalido para descomprimir"
+
+        if self.entrada.text== "":
+            self.resultado.text="Por favor, ingrese algún texto en formato hexadecimal para descomprimir."
+
+        else:
+
+            try:
+                result=self.compresor.descomprimir(self.entrada.text)
+                self.resultado.text = "Texto descomprimido: \n" + result
+            except Exception as e:
+                self.resultado.text = f"texto inavalido para descomprimir.\n Por favor, ingrese texto en formato hexadecimal para descomprimir."
 
 if __name__ == '__main__':
     MiAplicacion().run()
