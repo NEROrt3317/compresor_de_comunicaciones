@@ -38,5 +38,5 @@ class TestCompresorZlibExtraordinarios(unittest.TestCase):
         self.assertIsNone(self.compresor.descomprimir(texto_comprimido_corrupto))
 
 # La siguiente línea se descomenta para ejecutar los tests si se ejecuta este script directamente.
-# if __name__ == '__main__':
-#     unittest.main()
+if __name__ == '__main__':
+    unittest.main()
