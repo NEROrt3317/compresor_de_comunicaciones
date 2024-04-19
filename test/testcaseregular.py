@@ -36,5 +36,5 @@ class TestCompresorZlib(unittest.TestCase):
         self.assertEqual(self.compresor.descomprimir(texto_comprimido), "12345")
 
 # La siguiente línea se descomenta para ejecutar los tests si se ejecuta este script directamente.
-# if __name__ == '__main__':
-#     unittest.main()
+if __name__ == '__main__':
+    unittest.main()
